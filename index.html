@@ -2,9 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>신입 개발자 윤재성의 자기소개 페이지</title>
+    <title>타이틀</title>
+    <link rel="stylesheet" href="http://localhost/css/master.css">
   </head>
-  <body>
-    <h1>개발자 윤재성</h1>
+  <body id = 'target'>
+    <div id ="control">
+      <input type="button" value="white" onclick="document.getElementById('target').className='white'" />
+      <input type="button" value="black" onclick="document.getElementById('target').className='black'"  />
+    </div>
+    <!--Wrapper-->
+    <div class="" id ="wrapper">
+      <header id= "header">
+        <h1>제목</h1>
+      </header>
+      <section id= "main">
+        <ol id= "index_list">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ol>
+      </section>
+    </div>
   </body>
 </html>
