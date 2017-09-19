@@ -4,14 +4,29 @@
     <meta charset="utf-8">
     <title>타이틀</title>
     <link rel="stylesheet" type = "text/css" href="master.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        var jbOffset = $( '.control' ).offset();
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() > jbOffset.top ) {
+            $( '.control' ).addClass( 'cFixed' );
+          }
+          else {
+            $( '.control' ).removeClass( 'cFixed' );
+          }
+        });
+      } );
+    </script>
   </head>
   <body id = "target">
+    <div class ="control" id = "control">
+      <input type="button" value="white" onclick="document.getElementById('target').className='white'" />
+      <input type="button" value="black" onclick="document.getElementById('target').className='black'" />
+    </div>
     <!--Wrapper-->
     <div class = "wrapper" id ="wrapper">
-      <section id ="control">
-        <input type="button" value="white" onclick="document.getElementById('target').className='white'" />
-        <input type="button" value="black" onclick="document.getElementById('target').className='black'" />
-      </section>
+
       <section id= "header">
         <h1>제목</h1>
       </section>

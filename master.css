@@ -13,14 +13,22 @@ body.white {
   color:black;
 }
 div.wrapper {
-  height: 100%;
+  height: 95%;
   margin-left:auto;
   margin-right:auto;
+}
+div.control {
+  height: 100%;
+}
+.cFixed {
+       position: fixed;
+       top: 0px;
 }
 #header {
   border-bottom:1px solid gray;
   padding:20px;
 }
 #control {
+  background-color: grey;
   float:right;
 }
