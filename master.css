@@ -17,13 +17,10 @@ div.wrapper {
   margin-left:auto;
   margin-right:auto;
 }
-#header{
+#header {
   border-bottom:1px solid gray;
   padding:20px;
 }
 #control {
   float:right;
-}
-#wrapper {
-
 }
