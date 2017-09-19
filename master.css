@@ -22,7 +22,6 @@ div.wrapper {
   background-color: yellow;
   padding: 10px 0px;
   width: 100%;
-  height: 100%;
 }
 .cFixed {
   position: fixed;
